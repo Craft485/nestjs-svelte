@@ -11,6 +11,6 @@ async function bootstrap() {
   app.engine('svelte', svelteViewEngine);
   app.setViewEngine('svelte');
   await app.listen(3000);
-  Logger.log(`server listening: ${await app.getUrl()}`);
+  Logger.log(`Server listening: ${await app.getUrl()}`, 'MainInstance');
 }
 bootstrap();
